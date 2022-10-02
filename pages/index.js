@@ -61,8 +61,8 @@ export default function Home() {
 
         console.log(payload)
 
-        // axios.post('https://pmds-groupf.herokuapp.com/predict', {
-        axios.post('http://127.0.0.1:8000/predict', payload).then(response => {
+        axios.post('https://pmds-groupf.herokuapp.com/predict', payload).then(response => {
+        // axios.post('http://127.0.0.1:8000/predict', payload).then(response => {
             setResult(response.data)
         });
     }
