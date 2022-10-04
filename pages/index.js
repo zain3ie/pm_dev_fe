@@ -338,7 +338,7 @@ export default function Home() {
                         {processing ? "Predicting..." : "Predict"}
                     </button>
 
-                    <div className="w-full px-10 py-2 font-semibold text-center rounded sm:w-64 ring-1 ring-blue-400">
+                    <div className={`${processing ? 'ring-gray-100 text-gray-300' : 'ring-blue-400'} w-full px-10 py-2 font-semibold text-center rounded sm:w-64 ring-1`}>
                         Prediction result = {result[0]}
                     </div>
                 </div>
