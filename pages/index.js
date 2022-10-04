@@ -328,17 +328,17 @@ export default function Home() {
 
                 <hr className="m-2"></hr>
 
-                <div className="flex justify-center p-4 space-x-10">
+                <div className="flex flex-col items-center justify-center p-4 space-y-6 sm:space-x-10 sm:space-y-0 sm:flex-row">
                     <button
                         type="submit"
                         onClick={predict}
-                        className="justify-center w-64 px-4 py-2 font-semibold text-white bg-blue-500 border border-transparent rounded-md disabled:bg-gray-100 disabled:text-gray-700 group hover:bg-blue-600 focus:outline-none"
+                        className="justify-center w-full px-4 py-2 font-semibold text-white bg-blue-500 border border-transparent rounded-md sm:w-64 disabled:bg-gray-100 disabled:text-gray-700 group hover:bg-blue-600 focus:outline-none"
                         disabled={processing}
                     >
                         {processing ? "Predicting..." : "Predict"}
                     </button>
 
-                    <div className="w-64 px-10 py-2 font-semibold rounded ring-1 ring-blue-400">
+                    <div className="w-full px-10 py-2 font-semibold text-center rounded sm:w-64 ring-1 ring-blue-400">
                         Prediction result = {result[0]}
                     </div>
                 </div>
